@@ -18,22 +18,84 @@ body {
     font-family: "Outif", serif;
     font-weight: 400;
     font-size: 0.9375rem;
-    background-color: var(--slate-300);
+    /* background-color: var(--slate-300); */
     /* overflow: hidden; */
     height: 100vh;
     width: 100%;
 }
 
-section {
+.main-container {
+    background-color: var(--slate-300);
+    display: flex;
+    padding: 156.5px 27.5px;
+}
+
+.main-container .qr-code-container {
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.048), 0 10px 15px 5px rgba(0, 0, 0, 0.048);
+    background-color: var(--white);
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 180px 50px;
+    padding: 16px 16px 40px;
+    width: 100%;
+    height: fit-content;
+    /* margin: 180px 50px;
     background-color: var(--white);
+    border-radius: 10px; */
 }
 
-.header-para {
+.main-container .text-container {
+    position: relative;
+    display: flex;
+    padding: 0 5px;
+    height: 131px;
+}
+
+.main-container .paragraph1 {
+    position: relative;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: "Outfit";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--slate-900);
+}
+
+.main-container .paragraph2 {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    translate: -50px 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: "Outfit";
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    color: var(--slate-500);
+}
+
+.main-container .qr-image-container {
+    border-radius: 10px;
+    background: #2C7DFA;
+    position: relative;
+    margin-bottom: 24px;
+    width: 288px;
+    height: 288px;
+}
+
+.main-container .qr-image {
+    position: absolute;
+    left: -131.5px;
+    bottom: -186.5px;
+    width: 533px;
+    height: 639px;
+}
+
+/* .header-para {
     display: inline-block;
     flex-flow: column-reverse;
 }
@@ -47,12 +109,13 @@ p {
 }
 
 figure {
-    margin: 50px;
+    margin: 20px;
 }
 
 img {
-    /* display: none; */
-}
+    display: none;
+    border-radius: 10px;
+} */
 
 .attribution {
     font-size: 0.6875rem;
