@@ -15,89 +15,72 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This project is a simple, responsive QR code component. It includes a QR code image and text encouraging users to scan the code and visit Frontend Mentor. The component is designed with responsiveness in mind, ensuring a clean and structured display on both mobile and desktop devices.
 
 ### Screenshot
 
-![QR Code Solution](./images/qr-code-solution.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot of QR Code Component](./images/qr-code-solution.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://nkululekocyrilcele.github.io/QR-Code-Component/)
+- Live Site URL: [Click here](https://nkululekocyrilcele.github.io/QR-Code-Component/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- **Semantic HTML5 markup**: All elements use semantic HTML tags to enhance accessibility.
+- **Custom CSS**: The design uses pure CSS with custom styles to handle layout, typography, and responsiveness.
+- **Flexbox**: Used for centering the component both vertically and horizontally in the viewport.
+- **Mobile-first workflow**: The design prioritizes mobile devices first and scales up for larger screens using media queries.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project helped reinforce the importance of semantic HTML and how to manually recreate commonly used Bootstrap features using pure CSS. I wanted to avoid using a heavy CSS framework and focused on making my code as clean and maintainable as possible.
 
-To see how you can add code snippets, see below:
+Here's a key section of the CSS that mimics Bootstrap's flexbox layout:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I also learned how to balance card styling with responsiveness by writing media queries to ensure the design looks good on mobile and desktop:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+@media (min-width: 768px) {
+  .qr-card {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .qr-card {
+    max-width: 375px;
+  }
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Going forward, I plan to focus on improving my CSS organization by experimenting with methodologies like BEM (Block, Element, Modifier) and improving accessibility with better ARIA attributes.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs - Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - This guide helped me better understand flexbox and its practical uses for layout and alignment.
+- [CSS Tricks - CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - A detailed explanation of how flexbox works, which was crucial for centering the card in the viewport.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Nkululeko Cyril Cele
+- Frontend Mentor - [@NkululekoCyrilCele](https://www.frontendmentor.io/profile/NkululekoCyrilCele)
 
 ## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A special thanks to the Frontend Mentor community for the inspiration while building this solution.
